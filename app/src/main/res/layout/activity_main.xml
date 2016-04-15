@@ -3,14 +3,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="nz.co.maitech.myappportfolio.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerVertical="true" >
+        <!--android:layout_centerInParent="true">-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_title" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_one"
+                android:onClick="announce"/>
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_two"
+                android:onClick="announce"/>
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_three"
+                android:onClick="announce"/>
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_four"
+                android:onClick="announce"/>
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_five"
+                android:onClick="announce"/>
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_six"
+                android:onClick="announce"/>
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/app_seven"
+                android:onClick="announce"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </RelativeLayout>
